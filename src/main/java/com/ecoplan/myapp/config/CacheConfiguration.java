@@ -47,6 +47,18 @@ public class CacheConfiguration {
             createCache(cm, com.ecoplan.myapp.domain.User.class.getName());
             createCache(cm, com.ecoplan.myapp.domain.Authority.class.getName());
             createCache(cm, com.ecoplan.myapp.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.ecoplan.myapp.domain.TipoProyecto.class.getName());
+            createCache(cm, com.ecoplan.myapp.domain.TipoProyecto.class.getName() + ".proyectos");
+            createCache(cm, com.ecoplan.myapp.domain.TipoActividad.class.getName());
+            createCache(cm, com.ecoplan.myapp.domain.TipoActividad.class.getName() + ".actividads");
+            createCache(cm, com.ecoplan.myapp.domain.Estado.class.getName());
+            createCache(cm, com.ecoplan.myapp.domain.Estado.class.getName() + ".proyectos");
+            createCache(cm, com.ecoplan.myapp.domain.Estado.class.getName() + ".actividads");
+            createCache(cm, com.ecoplan.myapp.domain.Empresa.class.getName());
+            createCache(cm, com.ecoplan.myapp.domain.Empresa.class.getName() + ".proyectos");
+            createCache(cm, com.ecoplan.myapp.domain.Proyecto.class.getName());
+            createCache(cm, com.ecoplan.myapp.domain.Proyecto.class.getName() + ".actividads");
+            createCache(cm, com.ecoplan.myapp.domain.Actividad.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
